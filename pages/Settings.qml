@@ -627,10 +627,10 @@ Rectangle {
             text: qsTr("GUI version: ") + Version.GUI_VERSION + " (Qt " + qtRuntimeVersion + ")" + translationManager.emptyString
         }
         TextBlock {
-            id: guiMoneroVersion
+            id: guiByteRubersion
             Layout.fillWidth: true
             font.pixelSize: 14
-            text: qsTr("Embedded MoneroV version: ") + Version.GUI_MONERO_VERSION + translationManager.emptyString
+            text: qsTr("Embedded ByteRub version: ") + Version.GUI_MONERO_VERSION + translationManager.emptyString
         }
         TextBlock {
             id: restoreHeightText

@@ -1,37 +1,37 @@
-# MoneroV GUI 
+# ByteRub GUI 
 
-Copyright (c) 2018, The MoneroV Project
+Copyright (c) 2018, The ByteRub Project
 
 Copyright (c) 2014-2018, The Monero Project
 
 
-This is the GUI for the [core MoneroV project](https://github.com/monerov/monerov). It is an open source project that is completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of MoneroV.
+This is the GUI for the [core ByteRub project](https://github.com/byterub-pay/byterub). It is an open source project that is completely free to use without restrictions, except for those specified in the license agreement below. There are no restrictions on anyone creating an alternative implementation of ByteRub.
 
 ![alt text](https://i.imgur.com/V1fv2sQ.png)
 
 ## Development resources
 
-- Website: [monerov.org](https://monerov.org)
-- Github: [https://github.com/monerov/monerov-gui](https://github.com/monerov/monerov-gui)
-- Mail: [team at monerov.org](mailto:team@monerov.org)
+- Website: [byterub.org](https://byterub.org)
+- Github: [https://github.com/byterub-pay/byterub-gui](https://github.com/byterub-pay/byterub-gui)
+- Mail: [team at byterub.org](mailto:team@byterub.org)
 
 
-## Supporting the MoneroV project
+## Supporting the ByteRub project
 
-MoneroV GUI and all its dependencies is 100% open sourced. Everyone can join by making pull requests to this project repository or by making transaltions.
+ByteRub GUI and all its dependencies is 100% open sourced. Everyone can join by making pull requests to this project repository or by making transaltions.
 
 
 ## License
 
 See [LICENSE](LICENSE).
 
-## Compiling the MoneroV GUI from source
+## Compiling the ByteRub GUI from source
 
 ### On Linux:
 
 (Tested on Ubuntu 16.04 x86)
 
-1. Install MoneroV dependencies
+1. Install ByteRub dependencies
 
   - For Ubuntu and Mint
 
@@ -41,13 +41,13 @@ See [LICENSE](LICENSE).
 
 	`sudo emerge app-arch/xz-utils app-doc/doxygen dev-cpp/gtest dev-libs/boost dev-libs/expat dev-libs/openssl dev-util/cmake media-gfx/graphviz net-dns/unbound net-libs/ldns net-libs/miniupnpc net-libs/zeromq sys-libs/libunwind`
 
-2. Grab an up-to-date copy of the monerov-gui repository
+2. Grab an up-to-date copy of the byterub-gui repository
 
-	`git clone --recursive https://github.com/monerov/monerov-gui.git`
+	`git clone --recursive https://github.com/byterub-pay/byterub-gui.git`
 
 3. Go into the repository
 
-	`cd monerov-gui`
+	`cd byterub-gui`
 
 4. Install the GUI dependencies
 
@@ -97,7 +97,7 @@ The executable can be found in the build/release/bin folder.
 
 2. Install [homebrew](http://brew.sh/)
 
-3. Install [monerov](https://github.com/monerov/monerov) dependencies:
+3. Install [byterub](https://github.com/byterub-pay/byterub) dependencies:
 
   `brew install boost --c++11`
 
@@ -125,13 +125,13 @@ The executable can be found in the build/release/bin folder.
 
     This is the directory where Qt 5.x is installed on **your** system
 
-6. Grab an up-to-date copy of the monerov-gui repository
+6. Grab an up-to-date copy of the byterub-gui repository
 
-  `git clone https://github.com/monerov/monerov-gui.git`
+  `git clone https://github.com/byterub-pay/byterub-gui.git`
 
 7. Go into the repository
 
-  `cd monerov-gui`
+  `cd byterub-gui`
 
 8. Start the build
 
@@ -156,7 +156,7 @@ More info: http://stackoverflow.com/a/35098040/1683164
 
 1. Install [MSYS2](https://www.msys2.org/), follow the instructions on that page on how to update packages to the latest versions
 
-2. Install MoneroV dependencies as described in [monerov documentation](https://github.com/monerov/monerov) into the MSYS2 environment (using the MSYS2 MinGW 64-bit shell)
+2. Install ByteRub dependencies as described in [byterub documentation](https://github.com/byterub-pay/byterub) into the MSYS2 environment (using the MSYS2 MinGW 64-bit shell)
    **As we only build the application for Windows 64-bit, install only dependencies for 64-bit architecture (x86_64 in package name)**
    ```
    pacman -S mingw-w64-x86_64-toolchain make mingw-w64-x86_64-cmake mingw-w64-x86_64-boost mingw-w64-x86_64-openssl mingw-w64-x86_64-zeromq mingw-w64-x86_64-libsodium
@@ -178,12 +178,12 @@ More info: http://stackoverflow.com/a/35098040/1683164
 5. Clone repository
 
     ```
-    git clone https://github.com/monerov/monerov-gui.git
+    git clone https://github.com/byterub-pay/byterub-gui.git
     ```
 
 6. Build the GUI
     ```
-    cd monerov-gui
+    cd byterub-gui
     ./build.sh
     cd build
     make deploy

@@ -724,7 +724,7 @@ QString Wallet::getDaemonLogPath() const
 
 QString Wallet::getWalletLogPath() const
 {
-    const QString filename("monerov-wallet-gui.log");
+    const QString filename("byterub-wallet-gui.log");
 
 #ifdef Q_OS_MACOS
     return QStandardPaths::standardLocations(QStandardPaths::HomeLocation).at(0) + "/Library/Logs/" + filename;

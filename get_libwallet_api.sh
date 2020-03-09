@@ -1,5 +1,5 @@
 #!/bin/bash
-MONERO_URL=git@github.com:monerov/monerov.git
+MONERO_URL=git@github.com:byterub/byterub.git
 MONERO_BRANCH=master
 
 pushd $(pwd)
@@ -8,12 +8,12 @@ ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 source $ROOT_DIR/utils.sh
 
 INSTALL_DIR=$ROOT_DIR/wallet
-MONERO_DIR=$ROOT_DIR/monerov
+MONERO_DIR=$ROOT_DIR/byterub
 BUILD_LIBWALLET=false
 
 # init and update monero submodule
 if [ ! -d $MONERO_DIR/src ]; then
-    git submodule init monerov
+    git submodule init byterub
 fi
 git submodule update --remote
 git -C $MONERO_DIR fetch
@@ -33,8 +33,8 @@ git -C $MONERO_DIR submodule update
 # Save current user settings and revert back when we are done with merging PR's
 OLD_GIT_USER=$(git -C $MONERO_DIR config --local user.name)
 OLD_GIT_EMAIL=$(git -C $MONERO_DIR config --local user.email)
-git -C $MONERO_DIR config user.name "MoneroV GUI"
-git -C $MONERO_DIR config user.email "gui@monerov.local"
+git -C $MONERO_DIR config user.name "ByteRub GUI"
+git -C $MONERO_DIR config user.email "gui@byterub.local"
 # check for PR requirements in most recent commit message (i.e requires #xxxx)
 for PR in $(git log --format=%B -n 1 | grep -io "requires #[0-9]*" | sed 's/[^0-9]*//g'); do
     echo "Merging monero push request #$PR"
@@ -54,7 +54,7 @@ if [ ! -f $MONERO_DIR/lib/libwallet_merged.a ]; then
     BUILD_LIBWALLET=true
 # Build libwallet if no previous version file exists
 elif [ ! -f $MONERO_DIR/version.sh ]; then 
-    echo "monerov/version.h not found - Building libwallet"
+    echo "byterub/version.h not found - Building libwallet"
     BUILD_LIBWALLET=true
 ## Compare previously built version with submodule + merged PR's version. 
 else
@@ -70,7 +70,7 @@ else
         echo "Building new libwallet version $GUI_MONERO_VERSION"
         BUILD_LIBWALLET=true
     else
-        echo "latest libwallet ($GUI_MONERO_VERSION) is already built. Remove monerov/lib/libwallet_merged.a to force rebuild"
+        echo "latest libwallet ($GUI_MONERO_VERSION) is already built. Remove byterub/lib/libwallet_merged.a to force rebuild"
     fi
 fi
 
@@ -118,7 +118,7 @@ else
 fi
 
 
-echo "cleaning up existing monerov build dir, libs and includes"
+echo "cleaning up existing byterub build dir, libs and includes"
 rm -fr $MONERO_DIR/build
 rm -fr $MONERO_DIR/lib
 rm -fr $MONERO_DIR/include

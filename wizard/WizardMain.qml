@@ -364,7 +364,7 @@ ColumnLayout {
         anchors.right: parent.right
         anchors.bottom: parent.bottom
         anchors.margins:  (isMobile) ? 20 * scaleRatio : 50 * scaleRatio
-        text: qsTr("USE MONEROV") + translationManager.emptyString
+        text: qsTr("USE BYTERUB") + translationManager.emptyString
         visible: parent.paths[currentPath][currentPage] === finishPage
         onClicked: {
             wizard.applySettings();

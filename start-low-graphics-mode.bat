@@ -2,4 +2,4 @@
 
 set QMLSCENE_DEVICE=softwarecontext
 
-start /b monerov-wallet-gui.exe
+start /b byterub-wallet-gui.exe

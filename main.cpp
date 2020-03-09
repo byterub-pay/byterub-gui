@@ -81,7 +81,7 @@ int main(int argc, char *argv[])
 //#endif
 
     // Log settings
-    Monero::Wallet::init(argv[0], "monerov-wallet-gui");
+    Monero::Wallet::init(argv[0], "byterub-wallet-gui");
 //    qInstallMessageHandler(messageHandler);
 
     MainApp app(argc, argv);
@@ -89,8 +89,8 @@ int main(int argc, char *argv[])
     qDebug() << "app startd";
 
     app.setApplicationName("monero-core");
-    app.setOrganizationDomain("monerov.org");
-    app.setOrganizationName("monerov-project");
+    app.setOrganizationDomain("byterub.org");
+    app.setOrganizationName("byterub-project");
 
     #if defined(Q_OS_LINUX) && !defined(Q_OS_ANDROID)
     app.setWindowIcon(QIcon(":/images/appicon.ico"));
@@ -240,7 +240,7 @@ int main(int argc, char *argv[])
 
 
     if (!moneroAccountsRootDir.empty()) {
-        QString moneroAccountsDir = moneroAccountsRootDir.at(0) + "/MoneroV/wallets";
+        QString moneroAccountsDir = moneroAccountsRootDir.at(0) + "/ByteRub/wallets";
         engine.rootContext()->setContextProperty("moneroAccountsDir", moneroAccountsDir);
     }
 

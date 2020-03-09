@@ -1,3 +1,3 @@
 REM Execute the Monero daemon and then stay with window open after it exits
-"C:\Program Files\Monero Core\monerovd.exe"
+"C:\Program Files\Monero Core\byterubd.exe"
 PAUSE

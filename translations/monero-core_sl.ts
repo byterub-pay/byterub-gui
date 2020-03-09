@@ -2351,7 +2351,7 @@ Velikost obroča: </translation>
     <message>
         <location filename="../main.qml" line="822"/>
         <source>This address received %1 monero, with %2 confirmation(s).</source>
-        <translation>Ta naslov je prejel %1 monerov, s %2 potrditev.</translation>
+        <translation>Ta naslov je prejel %1 byterub, s %2 potrditev.</translation>
     </message>
     <message>
         <location filename="../main.qml" line="833"/>

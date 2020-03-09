@@ -72,7 +72,7 @@ ColumnLayout {
             color: "#3F3F3F"
             wrapMode: Text.Wrap
             horizontalAlignment: Text.AlignHCenter
-            text: qsTr("Welcome to MoneroV!") + translationManager.emptyString
+            text: qsTr("Welcome to ByteRub!") + translationManager.emptyString
         }
 
         Text {

@@ -2,7 +2,7 @@ TEMPLATE = app
 
 QT += qml quick widgets
 
-WALLET_ROOT=$$PWD/monerov
+WALLET_ROOT=$$PWD/byterub
 
 CONFIG += c++11 link_pkgconfig
 packagesExist(libpcsclite) {

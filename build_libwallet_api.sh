@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-# MONERO_URL=git@github.com:monerov/monerov.git
+# MONERO_URL=git@github.com:byterub/byterub.git
 # MONERO_BRANCH=master
 CPU_CORE_COUNT=$(grep -c ^processor /proc/cpuinfo 2>/dev/null || sysctl -n hw.ncpu)
 pushd $(pwd)
@@ -11,7 +11,7 @@ source $ROOT_DIR/utils.sh
 
 
 INSTALL_DIR=$ROOT_DIR/wallet
-MONERO_DIR=$ROOT_DIR/monerov
+MONERO_DIR=$ROOT_DIR/byterub
 
 
 mkdir -p $MONERO_DIR/build/release

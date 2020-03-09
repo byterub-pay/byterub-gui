@@ -111,7 +111,7 @@ ColumnLayout {
             color: "#484545"
             textFormat: Text.RichText
 //            horizontalAlignment: Text.AlignHCenter
-            text: qsTr("To be able to communicate with the MoneroV network your wallet needs to be connected to a MoneroV node. For best privacy it's recommended to run your own node. \
+            text: qsTr("To be able to communicate with the ByteRub network your wallet needs to be connected to a ByteRub node. For best privacy it's recommended to run your own node. \
                         <br><br> \
                         If you don't have the option to run an own node there's an option to connect to a remote node.")
                     + translationManager.emptyString

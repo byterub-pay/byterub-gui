@@ -87,7 +87,7 @@ Rectangle {
 
         Text {
             text: qsTr("This page allows you to interact with the shared ring database.<br>" +
-                       "This database is meant for use by MoneroV wallets as well as wallets from MoneroV clones which reuse the MoneroV keys.") + translationManager.emptyString
+                       "This database is meant for use by ByteRub wallets as well as wallets from ByteRub clones which reuse the ByteRub keys.") + translationManager.emptyString
             wrapMode: Text.Wrap
             Layout.fillWidth: true;
             color: Style.defaultFontColor
@@ -104,16 +104,16 @@ Rectangle {
             onLinkActivated: {
                 sharedRingDBDialog.title  = qsTr("Blackballed outputs") + translationManager.emptyString;
                 sharedRingDBDialog.text = qsTr(
-                    "In order to obscure which inputs in a MoneroV transaction are being spent, a third party should not be able " +
+                    "In order to obscure which inputs in a ByteRub transaction are being spent, a third party should not be able " +
                     "to tell which inputs in a ring are already known to be spent. Being able to do so would weaken the protection " +
                     "afforded by ring signatures. If all but one of the inputs are known to be already spent, then the input being " +
                     "actually spent becomes apparent, thereby nullifying the effect of ring signatures, one of the three main layers " +
-                    "of privacy protection MoneroV uses.<br>" +
+                    "of privacy protection ByteRub uses.<br>" +
                     "To help transactions avoid those inputs, a list of known spent ones can be used to avoid using them in new " +
-                    "transactions. Such a list is maintained by the MoneroV project and is available on the monerov.org website, " +
+                    "transactions. Such a list is maintained by the ByteRub project and is available on the byterub.org website, " +
                     "and you can import this list here.<br>" +
-                    "Alternatively, you can scan the blockchain (and the blockchain of key-reusing MoneroV clones) yourself " +
-                    "using the monerov-blockchain-blackball tool to create a list of known spent outputs.<br>"
+                    "Alternatively, you can scan the blockchain (and the blockchain of key-reusing ByteRub clones) yourself " +
+                    "using the byterub-blockchain-blackball tool to create a list of known spent outputs.<br>"
                 )
                 sharedRingDBDialog.icon = StandardIcon.Information
                 sharedRingDBDialog.open()
